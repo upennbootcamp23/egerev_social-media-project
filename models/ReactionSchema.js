@@ -21,7 +21,7 @@ const reactionBlueprint = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: (dateCreated) => dateFormat(dateCreated),
+            get: (dateCreated) => writeDate(dateCreated),
         }
     }
 );

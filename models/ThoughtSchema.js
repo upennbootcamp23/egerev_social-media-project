@@ -1,57 +1,14 @@
-// const { Schema, model } = require("mongoose");
-// const dateFormat = require("../utils/dateFormat");
-// const reactionSchema = require("./Reaction");
-
-// const ThoughtSchema = new Schema(
-//   {
-//     thoughtText: {
-//       type: String,
-//       required: "Your thought must be between 1 and 280 characters!",
-//       minLength: 1,
-//       maxLength: 280,
-//     },
-//     createdAt: {
-//       type: Date,
-//       default: Date.now,
-//       get: (createdAtVal) => dateFormat(createdAtVal),
-//     },
-//     username: {
-//       type: String,
-//       required: true,
-//     },
-//     // arr of nested documents created with reactionSchema
-//     reactions: [
-//       {
-//         type: reactionSchema,
-//       },
-//     ],
-//   },
-//   {
-//     toJSON: {
-//       virtuals: true,
-//     },
-//     id: false,
-//   }
-// );
-
-// ThoughtSchema.virtual("reactionCount").get(function () {
-//   return this.reactions.length;
-// });
-
-// const Thought = model("Thought", ThoughtSchema);
-
-// module.exports = Thought;
-
-const { Schema, model } = require('mongoose');
-const reactionSchema = require('./Reaction');
+const { model, Schema } = require('mongoose');
+const reactionBlueprint = require('./ReactionSchema');
 const dateFormat = require('../utils/dateFormat');
-const thoughtSchema = new Schema(
+const thoughtBlueprint = new Schema(
   {
     thoughtText: {
       type: String,
-      required: 'You need to leave a thought!',
       minlength: 1,
-      maxlength: 280
+      maxlength: 280,
+      required: true
+      
     },
     createdAt: {
       type: Date,
@@ -62,7 +19,8 @@ const thoughtSchema = new Schema(
       type: String,
       required: true
     },
-    reactions: [reactionSchema]
+
+    reactions: [reactionBlueprint]
   },
   {
     toJSON: {
@@ -71,10 +29,10 @@ const thoughtSchema = new Schema(
     id: false
   }
 );
-thoughtSchema.virtual('reactionCount').get(function() {
+thoughtBlueprint.virtual('reactionCount').get(function() {
   return this.reactions.length;
 });
-const Thought = model('Thought', thoughtSchema);
-module.exports = Thought;
+const ThoughtDB = model('Thought', thoughtBlueprint);
+module.exports = ThoughtDB;
 
 

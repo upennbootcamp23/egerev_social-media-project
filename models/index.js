@@ -1,4 +1,4 @@
-let Thought = require("./Thought");
-let User = require("./User");
+let Thought = require("./ThoughtSchema");
+let User = require("./UserSchema");
 
 module.exports = { Thought, User };

@@ -1,11 +1,11 @@
-const router = require('express').Router();
-// import all API routes from /api/index.js
-const apiRoutes = require("./api");
+let router = require('express').Router();
+
+let apiRoutes = require("./api");
 
 router.use("/api", apiRoutes);
 
 router.use((req, res) => {
-    res.status(404).send('<h1>😝 404 Error!</h1>');
+    res.status(404).send('<h1>ERROR! TRY AGAIN!</h1>');
   });
   
   module.exports = router;

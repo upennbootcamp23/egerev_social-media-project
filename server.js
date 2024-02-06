@@ -8,7 +8,7 @@ application.use(express.json());
 application.use(express.urlencoded({ extended: true }));
 application.use(express.static('public'));
 
-mongooseDB.connect(process.env.MONGODB_URI || "mongodb://localhost/social-network-api", {
+mongooseDB.connect(process.env.MONGODB_URI || "mongodb://localhost/socialmediaDB", {
     useFindAndModify: false,
     useCreateIndex: true,
     useUnifiedTopology: true,
@@ -16,9 +16,9 @@ mongooseDB.connect(process.env.MONGODB_URI || "mongodb://localhost/social-networ
 });
 
 // log mongo queries being executed
-mongoose.set("debug", true);
+mongooseDB.set("debug", true);
 
-app.use(require('./routes'));
+application.use(require('./routes'));
 
 console.log("Connecting...")
-app.listen(PORT, () => console.log(`Now LIVE on localhost:${PORT}`));
+application.listen(PORT, () => console.log(`Now LIVE on localhost:${PORT}`));

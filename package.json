@@ -1,0 +1,26 @@
+{
+  "name": "egerev_social-media-project",
+  "version": "1.0.0",
+  "description": "A Visual Studio version of a popular social media application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upennbootcamp23/egerev_social-media-project.git"
+  },
+  "keywords": [
+    "mongodb",
+    "friends",
+    "social",
+    "media"
+  ],
+  "author": "Alexander Egerev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/upennbootcamp23/egerev_social-media-project/issues"
+  },
+  "homepage": "https://github.com/upennbootcamp23/egerev_social-media-project#readme"
+}

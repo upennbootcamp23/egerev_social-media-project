@@ -1,8 +1,9 @@
 # Alex Egerev's Code-Ified Social Media Project
 
-![image](https://github.com/upennbootcamp23/egerev_MySQL-job-generator/assets/143010411/f6100213-dbdd-487e-bcd2-594ea9c59e6f)
+![image](https://github.com/upennbootcamp23/egerev_social-media-project/assets/143010411/55bddd49-131d-4efd-8b4a-2033d8133fa3)
+![image](https://github.com/upennbootcamp23/egerev_social-media-project/assets/143010411/caf52cf2-234e-4e10-95c3-92dcc4b6a01c)
+![image](https://github.com/upennbootcamp23/egerev_social-media-project/assets/143010411/7c5b33df-4060-4e88-8873-1c3e0616043e)
 
-![image](https://github.com/upennbootcamp23/egerev_MySQL-job-generator/assets/143010411/cf97fea6-9fba-4479-8299-a16f134f9de4)
 
 
 ## Description
@@ -41,4 +42,6 @@ The link to the help is https://github.com/njthanhtrang/18.-NoSQL-Challenge-Soci
 Please refer to the LICENSE in the repo.
 
 ## Demonstration
-Because the app is not deployed on GitHub Pages, I am providing the link on how I created the app. <https://github.com/upennbootcamp23/egerev_MySQL-job-generator/assets/143010411/6fa34311-a347-4ba2-9e50-6e263328a7a0 >
+Because the app is not deployed on GitHub Pages, I am providing the link on how I created the app. 
+https://github.com/upennbootcamp23/egerev_social-media-project/assets/143010411/50c43bb0-85c1-4323-a986-8298fdd3864d
+
